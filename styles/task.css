@@ -1,37 +1,70 @@
-
-body{
- background-color:bisque;
- font-family: Arial, sans-serif; 
- text-align: center;
-}
-.container {
- max-width: 400px; 
- margin: 50px auto; 
- padding: 50px; 
- border-radius: 10px; 
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-button { 
-margin: 15px; 
-padding: 10px; 
-width: 350px; 
-background-color: rgb(84, 170, 84);
-border: none;
-font-family: Tahoma, sans-serif;
-font-weight: 500;
-color: rgb(0, 0, 0);
-font-size: 16px;
-cursor: pointer;
-border-radius: 5px;
-}
-input{ 
-    margin: 15px; 
-    padding: 10px; 
-    width: 300px; 
-    }
-.task {
- background: #f4f4f4; 
- padding: 10px; 
- margin: 5px 10px; 
- border-radius: 5px; 
-}
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  input {
+    margin: 15px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button.add-task-btn {
+    margin: 15px;
+    padding: 10px;
+    width: 85%;
+    max-width: 350px;
+    background-color: rgb(84, 170, 84);
+    border: none;
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .tasks {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Layout and icons inside each task */
+  .tasks div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tasks button {
+    background: none;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .tasks i {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .tasks i:hover {
+    color: red;
+  }
+  

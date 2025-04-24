@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Scheduler</title>
-    <link rel="stylesheet" href="styles\task.css"> 
-    
-</head>
-<body>
-    <div class="container">
-        <h2>Task Scheduler</h2>
-        <input type="text" id="taskName" placeholder="Enter Task Name">
-        <input type="datetime-local" id="taskTime">
-        <button onclick="addTask()">Add Task</button>
-        <div id="taskList"></div>
-    </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Scheduler</title>
 
-    <script src ="task.js"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/task.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Optional: Bootstrap Icons (not used now but you can keep) -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <h2>Task Scheduler</h2>
+    
+    <input type="text" id="taskName" placeholder="Enter Task Name" />
+    <input type="datetime-local" id="taskTime" />
+    <button class="add-task-btn" onclick="addTask()">Add Task</button>
+    
+    <div id="taskList"></div>
+  </div>
+
+  <script src="task.js"></script>
 </body>
 </html>
